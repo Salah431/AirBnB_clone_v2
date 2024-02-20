@@ -19,7 +19,7 @@ def state_s():
     """ Display list of all the states """
     state_s = storage.all(State)
     state_s_list = list(state_s.values())
-    return render_template('7-states_list.html', state_s=states_list)
+    return render_template('7-states_list.html', state_s=state_s_list)
 
 
 if __name__ == '__main__':

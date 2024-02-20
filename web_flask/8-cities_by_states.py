@@ -18,8 +18,8 @@ def dis_pose(exception):
 def state_s():
     """ Display list of all the state_s """
     state_s = storage.all(State)
-    states__list = list(state_s.values())
-    return render_template('8-cities_by_states.html', state_s=states_list)
+    state_s_list = list(state_s.values())
+    return render_template('8-cities_by_states.html', state_s=state_s_list)
 
 
 if __name__ == '__main__':
